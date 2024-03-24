@@ -1,0 +1,14 @@
+@import url(fonts.css);
+@import url(normalize.css);
+@import url(style.css);
+
+@import url(blocks/header.css);
+@import url(blocks/hero.css);
+@import url(blocks/benefits.css);
+@import url(blocks/services.css);
+
+@import url(elements/logo.css);
+@import url(elements/socials.css);
+@import url(elements/btn.css);
+@import url(elements/slider__button.css);
+@import url(elements/burger.css);

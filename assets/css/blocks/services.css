@@ -1,0 +1,58 @@
+.services__slider-wrapper {
+  position: relative;
+}
+
+.services__slider .slick-slide {
+  opacity: 1 !important;
+}
+
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.services__card {
+  background: red;
+  border-radius: 10px;
+  height: 250px;
+  transition: transform .5s linear;
+  padding: 20px;
+}
+
+.services__card_big {
+  width: calc(50% - 6.7px);
+}
+
+.services__card_small {
+  width: calc(25% - 6.7px);
+}
+
+.services__card-title {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.services__card-btn {
+  display: inline-block;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 5px 20px;
+}
+
+.hide-left {
+  transform: translateX(-150%);
+}
+
+.hide-top {
+  transform: translateY(-150%);
+}
+
+.hide-right {
+  transform: translateX(150%);
+}
+
+.hide-bottom {
+  transform: translateY(150%);
+}

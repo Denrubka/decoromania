@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #deb46a;
+  background-image: url('../../img/btn/btn-bg.png');
+  background-repeat: repeat-x;
+  background-position: top left;
+  box-shadow: 0 3px 25px 5px rgba(189,142,90,.3);
+  border-radius: 25px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #33363c;
+  text-shadow: 1px 0 1px #f6e8c7;
+  border-bottom: 3px solid #bd8e5a;
+  transition: all .2s linear;
+}
+
+.btn:hover {
+  background-image: url('../../img/btn/btn-bg-hover.png');
+  box-shadow: 0 3px 25px 5px rgba(21,32,57,.7);
+}

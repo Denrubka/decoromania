@@ -1,0 +1,32 @@
+.benefits {
+  padding: 35px 0 40px 0;
+  overflow: hidden;
+}
+
+.benefits__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 20px;
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+
+.benefits__slide {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  min-width: 240px;
+  flex-shrink: 0;
+}
+
+.benefits__slide-img {
+  margin-bottom: 11px;
+}
+
+.benefits__slide-text {
+  font-size: 15px;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: #202b33;
+}

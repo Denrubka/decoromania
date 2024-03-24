@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoromania</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/libs/slick/slick.css">
+  <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css">
+</head>
+<body>
+  <div class="header__sticky" id="header-sticky">
+    <div class="header__sticky-wrapper">
+      <div class="logo header__logo header__logo_mobile">
+        <a href="/" class="logo__link header__logo-link">
+          <span class="logo__text header__logo-text">Декоративный <br/>
+            ремонт помещений</span>
+          <img class="logo__img header__logo-img" src="./assets/img/logo-mobile.png" width="145" height="25" alt="Декоративный ремонт помещений">
+        </a>
+      </div>
+
+      <div class="header__address">
+        <svg class="header__address-icon" width="18" height="18">
+          <use href="#address-icon"></use>
+        </svg>
+
+        <span class="header__address-text">Работаем в Москве и МО</span>
+      </div>
+
+      <nav class="nav header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item header__nav-item_current">
+            <a href="#" class="header__nav-link">
+              Главная
+            </a>
+          </li>
+
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              Примеры работ
+            </a>
+          </li>
+
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              Все услуги
+              <svg class="header__nav-link__icon" width="8" height="4">
+                <use href="#nav-arrow"></use>
+              </svg>
+            </a>
+            <ul class="header__nav-submenu">
+              <li class="header__nav-submenu-item">
+                <a href="#" class="header__nav-submenu-link">Пункт1</a>
+              </li>
+              <li class="header__nav-submenu-item">
+                <a href="#" class="header__nav-submenu-link">Пункт2</a>
+              </li>
+              <li class="header__nav-submenu-item">
+                <a href="#" class="header__nav-submenu-link">Пункт3</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              Порядок работ
+            </a>
+          </li>
+
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              Отзывы
+            </a>
+          </li>
+
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="socials__list">
+        <li class="socials__list-item">
+          <a href="#" class="socials__list-link">
+            <svg width="18" height="18">
+              <use href="#mail"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__list-item">
+          <a href="#" class="socials__list-link">
+            <svg width="18" height="18">
+              <use href="#phone"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__list-item">
+          <a href="#" class="socials__list-link">
+            <svg width="18" height="18">
+              <use href="#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__list-item">
+          <a href="#" class="socials__list-link">
+            <svg width="18" height="18">
+              <use href="#whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <button class="header__burger burger__btn" type="button">
+        <span class="burger__btn-line burger__btn-line_top"></span>
+        <span class="burger__btn-line burger__btn-line_bottom"></span>
+      </button>
+    </div>
+  </div>
+  <header class="header" id="header">
+    <div class="header__wrapper">
+      <div class="header__top" id="header-top">
+        <div class="container header__container">
+          <div class="logo header__logo header__logo_mobile">
+            <a href="/" class="logo__link header__logo-link">
+              <span class="logo__text header__logo-text">Декоративный <br/>
+                ремонт помещений</span>
+              <img class="logo__img header__logo-img" src="./assets/img/logo-mobile.png" width="145" height="25" alt="Декоративный ремонт помещений">
+            </a>
+          </div>
+
+          <div class="header__address">
+            <svg class="header__address-icon" width="18" height="18">
+              <use href="#address-icon"></use>
+            </svg>
+    
+            <span class="header__address-text">Работаем в Москве и МО</span>
+          </div>
+    
+          <nav class="nav header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item header__nav-item_current">
+                <a href="#" class="header__nav-link">
+                  Главная
+                </a>
+              </li>
+    
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">
+                  Примеры работ
+                </a>
+              </li>
+    
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">
+                  Все услуги
+                  <svg class="header__nav-link__icon" width="8" height="4">
+                    <use href="#nav-arrow"></use>
+                  </svg>
+                </a>
+                <ul class="header__nav-submenu">
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Пункт1</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Пункт2</a>
+                  </li>
+                  <li class="header__nav-submenu-item">
+                    <a href="#" class="header__nav-submenu-link">Пункт3</a>
+                  </li>
+                </ul>
+              </li>
+    
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">
+                  Порядок работ
+                </a>
+              </li>
+    
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">
+                  Отзывы
+                </a>
+              </li>
+    
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+    
+          <ul class="socials__list">
+            <li class="socials__list-item">
+              <a href="#" class="socials__list-link">
+                <svg width="18" height="18">
+                  <use href="#mail"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a href="#" class="socials__list-link">
+                <svg width="18" height="18">
+                  <use href="#phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a href="#" class="socials__list-link">
+                <svg width="18" height="18">
+                  <use href="#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a href="#" class="socials__list-link">
+                <svg width="18" height="18">
+                  <use href="#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <button class="header__burger burger__btn" type="button">
+            <span class="burger__btn-line burger__btn-line_top"></span>
+            <span class="burger__btn-line burger__btn-line_bottom"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="container header__container">
+          <div class="header__shedule">
+            <a href="#" class="header__shedule-link">+7 <span class="text_style_opacity">(</span>499<span class="text_style_opacity">)</span> 990-85-77</a>
+            <span class="header__shedule-text">На связи с 9:00 до 20:00</span>
+          </div>
+
+          <div class="logo header__logo">
+            <a href="/" class="logo__link header__logo-link">
+              <span class="logo__text header__logo-text">Декоративный <br/>
+                ремонт помещений</span>
+              <img class="logo__img header__logo-img" src="./assets/img/logo.png" width="145" height="25" alt="Декоративный ремонт помещений">
+            </a>
+          </div>
+
+          <a href="#" class="header__btn">
+            Заказать звонок
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero__slider-wrapper">
+    <div class="hero__slider">
+      <div class="hero__slide" style="background-image: url('./assets/img/hero-slider/slider1.jpg')">
+        <div class="container hero__slide-container">
+          <div class="hero__slide-content">
+            <h2 class="hero__slide-title">Декоративная покраска <br/> и штукатурка жилых и нежилых <br/> помещений <span class="text_style_opacity">от 500 руб./м²</span></h2>
+            <p class="hero__slide-text">От художников-реставраторов старой архитектуры, <br/> соборов, музеев с опытом 18 лет</p>
+            <a href="#" class="btn btn_main hero__slide-btn">Получить консультацию</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="hero__slide" style="background-image: url('./assets/img/hero-slider/slider2.jpg')">
+        <div class="container hero__slide-container">
+          <div class="hero__slide-content">
+            <h2 class="hero__slide-title">Декоративная покраска <br/> и штукатурка жилых и нежилых <br/> помещений от 500 руб./м²</h2>
+            <p class="hero__slide-text">От художников-реставраторов старой архитектуры, <br/> соборов, музеев с опытом 18 лет</p>
+            <a href="#" class="btn btn_main hero__slide-btn">Получить консультацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container hero__slider-buttons slider__button-container"></div>
+  </div>
+
+  <main class="main">
+    <section class="section benefits">
+      <div class="container">
+        <div class="benefits__slider">
+
+          <div class="benefits__slide">
+            <img class="benefits__slide-img" src="./assets/img/icons/benefits/benefits1.svg" width="22" height="23" alt="">
+            <p class="benefits__slide-text">
+              <strong>Реализуем</strong> художественные, <br/> дизайнерские, сложные проекты
+            </p>
+          </div>
+
+          <div class="benefits__slide">
+            <img class="benefits__slide-img" src="./assets/img/icons/benefits/benefits2.svg" width="22" height="23" alt="">
+            <p class="benefits__slide-text">
+              Сдаем проекты точно в срок <br/> <strong>с гарантией по договору</strong>
+            </p>
+          </div>
+
+          <div class="benefits__slide">
+            <img class="benefits__slide-img" src="./assets/img/icons/benefits/benefits3.svg" width="22" height="23" alt="">
+            <p class="benefits__slide-text">
+              Осуществляем выезд замерщика <br/> и консультация <strong>бесплатно</strong>
+            </p>
+          </div>
+
+          <div class="benefits__slide">
+            <img class="benefits__slide-img" src="./assets/img/icons/benefits/benefits4.svg" width="22" height="23" alt="">
+            <p class="benefits__slide-text">
+              Пенсионерам <strong>скидка 50%</strong> <br/> на штукатурку и покраску
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section services">
+      <div class="container">
+        <div class="services__slider-wrapper">
+          <div class="services__slider">
+            <div class="services__slide">
+              <div class="services__cards">
+                <div class="services__card services__card_big hide-left" style="background-color: green;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_small hide-top" style="background-color: green;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_small hide-top" style="background-color: green;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_small hide-bottom" style="background-color: green;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_small hide-bottom" style="background-color: green;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_big hide-right" style="background-color: green;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__slide">
+              <div class="services__cards">
+                <div class="services__card services__card_big hide-left" style="background-color: red;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_small hide-top" style="background-color: red;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_small hide-top" style="background-color: red;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_small hide-bottom" style="background-color: red;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_small hide-bottom" style="background-color: red;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+    
+                <div class="services__card services__card_big hide-right" style="background-color: red;">
+                  <p class="services__card-title">Декоративный бетон шмаль</p>
+                  <a href="#" class="services__card-btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container services__slider-buttons slider__button-container"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <svg class="visually-hidden" width="0" height="0" hidden>
+    <symbol  width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" id="address-icon">
+      <path d="M9 8.25C9.62132 8.25 10.125 7.74632 10.125 7.125C10.125 6.50368 9.62132 6 9 6C8.37868 6 7.875 6.50368 7.875 7.125C7.875 7.74632 8.37868 8.25 9 8.25Z" fill="white" fill-opacity="0.1" />
+      <path d="M9 1.5C7.41904 1.49992 5.90194 2.12382 4.77843 3.23609C3.65492 4.34837 3.01581 5.85912 3 7.44C3 11.55 8.2875 16.125 8.5125 16.32C8.64835 16.4362 8.82124 16.5 9 16.5C9.17876 16.5 9.35165 16.4362 9.4875 16.32C9.75 16.125 15 11.55 15 7.44C14.9842 5.85912 14.3451 4.34837 13.2216 3.23609C12.0981 2.12382 10.581 1.49992 9 1.5ZM9 9.75C8.48082 9.75 7.97331 9.59605 7.54163 9.30761C7.10995 9.01917 6.7735 8.6092 6.57482 8.12954C6.37614 7.64989 6.32415 7.12209 6.42544 6.61289C6.52672 6.10369 6.77673 5.63596 7.14384 5.26884C7.51096 4.90173 7.97869 4.65172 8.48789 4.55044C8.99709 4.44915 9.52489 4.50114 10.0045 4.69982C10.4842 4.8985 10.8942 5.23495 11.1826 5.66663C11.471 6.09831 11.625 6.60582 11.625 7.125C11.625 7.82119 11.3484 8.48887 10.8562 8.98115C10.3639 9.47344 9.69619 9.75 9 9.75Z" fill="CurrentColor" fill-opacity="CurrentOpacity" />
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" id="nav-arrow">
+      <path d="M3.64645 4.85355C3.84171 5.04882 4.15829 5.04882 4.35355 4.85355L7.53553 1.67157C7.7308 1.47631 7.7308 1.15973 7.53553 0.964466C7.34027 0.769204 7.02369 0.769204 6.82843 0.964466L4 3.79289L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.64645 4.85355ZM3.5 3.5V4.5H4.5V3.5H3.5Z" fill="CurrentColor"></path>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="mail">
+      <path d="M3 15C2.5875 15 2.2345 14.8533 1.941 14.5597C1.6475 14.2662 1.5005 13.913 1.5 13.5V4.5C1.5 4.0875 1.647 3.7345 1.941 3.441C2.235 3.1475 2.588 3.0005 3 3H15C15.4125 3 15.7657 3.147 16.0597 3.441C16.3538 3.735 16.5005 4.088 16.5 4.5V13.5C16.5 13.9125 16.3533 14.2657 16.0597 14.5597C15.7662 14.8538 15.413 15.0005 15 15H3ZM9 9.75L15 6V4.5L9 8.25L3 4.5V6L9 9.75Z" fill="CurrentColor" fill-opacity="CurrentOpacity"></path>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="phone">
+      <g clip-path="url(#clip0_190_2261)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4142 16.5996C11.3342 16.5599 8.27349 16.1369 5.06799 12.9321C1.86324 9.72661 1.44099 6.66661 1.40049 5.58586C1.34049 3.93886 2.60199 2.33911 4.05924 1.71436C4.23473 1.63858 4.42689 1.60973 4.61689 1.63064C4.80689 1.65154 4.98819 1.72149 5.14299 1.83361C6.34299 2.70811 7.17099 4.03111 7.88199 5.07136C8.03843 5.2999 8.10532 5.57802 8.06991 5.8527C8.0345 6.12739 7.89928 6.37945 7.68999 6.56086L6.22674 7.64761C6.15605 7.69866 6.10629 7.77363 6.0867 7.8586C6.06711 7.94357 6.07903 8.03276 6.12024 8.10961C6.45174 8.71186 7.04124 9.60886 7.71624 10.2839C8.39199 10.9589 9.33099 11.5874 9.97524 11.9564C10.056 12.0017 10.1511 12.0144 10.2409 11.9918C10.3308 11.9692 10.4085 11.913 10.4582 11.8349L11.4107 10.3851C11.5859 10.1525 11.8442 9.99666 12.1316 9.95024C12.4191 9.90383 12.7133 9.97043 12.9527 10.1361C14.008 10.8666 15.2395 11.6804 16.141 12.8346C16.2622 12.9905 16.3393 13.1762 16.3643 13.3721C16.3892 13.568 16.361 13.767 16.2827 13.9484C15.655 15.4131 14.0665 16.6604 12.4142 16.5996Z" fill="CurrentColor" fill-opacity="CurrentOpacity"></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_190_2261">
+          <rect width="18" height="18" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="telegram">
+      <path d="M15.5322 2.74087C15.5322 2.74087 16.9892 2.17275 16.8678 3.55248C16.8273 4.12061 16.4631 6.10905 16.1798 8.25983L15.2085 14.631C15.2085 14.631 15.1275 15.5643 14.399 15.7266C13.6705 15.8889 12.5778 15.1585 12.3754 14.9962C12.2135 14.8745 9.34005 13.0483 8.32822 12.1556C8.04491 11.9121 7.72114 11.4251 8.36869 10.857L12.6183 6.79894C13.1039 6.31196 13.5896 5.17571 11.566 6.55545L5.89991 10.4106C5.89991 10.4106 5.25236 10.8164 4.03823 10.4512L1.40753 9.63956C1.40753 9.63956 0.436204 9.03086 2.09556 8.42213C6.14276 6.51484 11.1208 4.56698 15.5322 2.74087Z" fill="CurrentColor" fill-opacity="CurrentOpacity"></path>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="whatsapp">
+      <path d="M9.00099 1.5C13.1432 1.5 16.501 4.85775 16.501 9C16.501 13.1423 13.1432 16.5 9.00099 16.5C7.67557 16.5021 6.37348 16.1514 5.22849 15.4838L1.50399 16.5L2.51799 12.774C1.84981 11.6287 1.49877 10.326 1.50099 9C1.50099 4.85775 4.85874 1.5 9.00099 1.5ZM6.44499 5.475L6.29499 5.481C6.19788 5.48691 6.10297 5.51243 6.01599 5.556C5.93463 5.60207 5.86036 5.65967 5.79549 5.727C5.70549 5.81175 5.65449 5.88525 5.59974 5.9565C5.32233 6.31718 5.17297 6.75998 5.17524 7.215C5.17674 7.5825 5.27274 7.94025 5.42274 8.27475C5.72949 8.95125 6.23424 9.6675 6.90024 10.3312C7.06074 10.491 7.21824 10.6515 7.38774 10.8007C8.21528 11.5293 9.20143 12.0548 10.2677 12.3353L10.6937 12.4005C10.8325 12.408 10.9712 12.3975 11.1107 12.3907C11.3292 12.3795 11.5424 12.3203 11.7355 12.2175C11.8337 12.1669 11.9296 12.1119 12.0227 12.0525C12.0227 12.0525 12.055 12.0315 12.1165 11.985C12.2177 11.91 12.28 11.8568 12.364 11.769C12.4262 11.7045 12.4802 11.6287 12.5215 11.5425C12.58 11.4202 12.6385 11.187 12.6625 10.9928C12.6805 10.8442 12.6752 10.7633 12.673 10.713C12.67 10.6328 12.6032 10.5495 12.5305 10.5142L12.094 10.3185C12.094 10.3185 11.4415 10.0343 11.0425 9.85275C11.0007 9.83452 10.956 9.8241 10.9105 9.822C10.8592 9.81673 10.8073 9.8225 10.7584 9.83893C10.7095 9.85536 10.6647 9.88206 10.627 9.91725C10.6232 9.91575 10.573 9.9585 10.0307 10.6155C9.99961 10.6573 9.95674 10.6889 9.90759 10.7063C9.85843 10.7237 9.80522 10.726 9.75474 10.713C9.70588 10.6999 9.65801 10.6834 9.61149 10.6635C9.51849 10.6245 9.48624 10.6095 9.42249 10.5825C8.99204 10.3947 8.5935 10.1409 8.24124 9.83025C8.14674 9.74775 8.05899 9.65775 7.96899 9.57075C7.67393 9.28817 7.41678 8.9685 7.20399 8.61975L7.15974 8.5485C7.12795 8.50062 7.10226 8.44898 7.08324 8.39475C7.05474 8.2845 7.12899 8.196 7.12899 8.196C7.12899 8.196 7.31124 7.9965 7.39599 7.8885C7.47849 7.7835 7.54824 7.6815 7.59324 7.60875C7.68174 7.46625 7.70949 7.32 7.66299 7.20675C7.45299 6.69375 7.23549 6.183 7.01199 5.676C6.96774 5.5755 6.83649 5.5035 6.71724 5.48925C6.67674 5.48475 6.63624 5.48025 6.59574 5.47725C6.49502 5.47225 6.39409 5.47325 6.29349 5.48025L6.44499 5.475Z" fill="CurrentColor" fill-opacity="CurrentOpacity"></path>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 16" id="slider-arrow-next">
+      <path d="M8.70711 7.29289C9.09763 7.68342 9.09763 8.31658 8.70711 8.70711L2.34315 15.0711C1.95262 15.4616 1.31946 15.4616 0.928932 15.0711C0.538408 14.6805 0.538408 14.0474 0.928932 13.6569L6.58579 8L0.928932 2.34315C0.538408 1.95262 0.538408 1.31946 0.928932 0.928932C1.31946 0.538408 1.95262 0.538408 2.34315 0.928932L8.70711 7.29289ZM7 7H8V9H7V7Z" fill="white"></path>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 16" id="slider-arrow-prev">
+      <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM2 7H1V9H2V7Z" fill="white"></path>
+    </symbol>
+  </svg>
+
+  <script src="./assets/libs/jquery/jquery-3.7.1.min.js"></script>
+  <script src="./assets/libs/jquery/jquery-migrate-3.4.1.min.js"></script>
+  <script src="./assets/libs/slick/slick.js"></script>
+  <script src="./assets/js/index.js" type="module"></script>
+
+</body>
+</html>
