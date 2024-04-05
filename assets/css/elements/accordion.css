@@ -1,0 +1,92 @@
+.accordion {
+  counter-reset: item 0;
+}
+
+.accordion__item {
+  position: relative;
+  padding-left: 80px;
+  counter-increment: item 1;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #DBB974;
+}
+
+.accordion__item:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.accordion__item::before {
+  position: absolute;
+  content: '0'counter(item);
+  top: -7px;
+  left: 0;
+  font-size: 50px;
+  color: #DBB974;
+}
+
+.accordion__item-button {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion__item-button[aria-expanded=true] + .accordion__content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all .2s linear;
+  will-change: opacity, max-height;
+}
+
+.accordion__item-icon {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #DBB974;
+}
+
+.accordion__item-icon:before, .accordion__item-icon:after {
+  position: absolute;
+  content: '';
+  background: #DBB974;
+}
+
+.accordion__item-icon:before {
+  width: 16px;
+  height: 2px;
+  left: 4px;
+  top: 11px;
+}
+
+.accordion__item-icon:after {
+  width: 2px;
+  height: 16px;
+  top: 4px;
+  left: 11px;
+  transform-origin: center;
+  transition: all .2s linear;
+}
+
+.accordion__item-button[aria-expanded=true] .accordion__item-icon:after {
+  transform: rotate(90deg)
+}
+
+.accordion__item-title {
+  font-size: 18px;
+  color: #1b1b1b;
+}
+
+.accordion__content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .2s linear;
+  will-change: opacity, max-height;
+}
+
+.accordion__text {
+  font-size: 16px;
+  color: #5e5e5e;
+}
