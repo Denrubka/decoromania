@@ -1,0 +1,35 @@
+.footer {
+  background: url('../../img/section-bg.jpg') no-repeat center / cover;
+  color: #FFFFFF;
+  padding: 50px 0;
+}
+
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer__logo {
+  margin-right: auto;
+}
+
+.footer__shedule {
+  margin-right: 40px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__policy {
+  margin-bottom: 10px;
+}

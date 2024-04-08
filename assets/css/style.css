@@ -97,7 +97,8 @@ iframe {
 }
 
 .section__title {
-  font-size: 44px;
+  font-family: 'Old Standard TT';
+  font-size: 50px;
   color: #000;
   margin-bottom: 60px;
   text-align: center;

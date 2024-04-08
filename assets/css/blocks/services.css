@@ -41,6 +41,11 @@
   padding: 5px 20px;
 }
 
+.services .slider__button {
+  border-color: #DBB974;
+  color: #DBB974;
+}
+
 .hide-left {
   transform: translateX(-150%);
 }

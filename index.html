@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decoromania</title>
   <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="stylesheet" href="./assets/libs/slick/slick.css">
-  <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css">
 </head>
 <body>
   <div class="header__sticky" id="header-sticky">
@@ -19,12 +17,12 @@
         </a>
       </div>
 
-      <div class="header__address">
-        <svg class="header__address-icon" width="18" height="18">
+      <div class="address">
+        <svg class="address__icon" width="18" height="18">
           <use href="#address-icon"></use>
         </svg>
 
-        <span class="header__address-text">Работаем в Москве и МО</span>
+        <span class="address__text">Работаем в Москве и МО</span>
       </div>
 
       <nav class="nav header__nav">
@@ -130,12 +128,12 @@
             </a>
           </div>
 
-          <div class="header__address">
-            <svg class="header__address-icon" width="18" height="18">
+          <div class="address">
+            <svg class="address__icon" width="18" height="18">
               <use href="#address-icon"></use>
             </svg>
     
-            <span class="header__address-text">Работаем в Москве и МО</span>
+            <span class="address__text">Работаем в Москве и МО</span>
           </div>
     
           <nav class="nav header__nav">
@@ -232,9 +230,9 @@
 
       <div class="header__bottom">
         <div class="container header__container">
-          <div class="header__shedule">
-            <a href="#" class="header__shedule-link">+7 <span class="text_style_opacity">(</span>499<span class="text_style_opacity">)</span> 990-85-77</a>
-            <span class="header__shedule-text">На связи с 9:00 до 20:00</span>
+          <div class="shedule">
+            <a href="#" class="shedule__link">+7 <span class="text_style_opacity">(</span>499<span class="text_style_opacity">)</span> 990-85-77</a>
+            <span class="shedule__text">На связи с 9:00 до 20:00</span>
           </div>
 
           <div class="logo header__logo">
@@ -245,13 +243,88 @@
             </a>
           </div>
 
-          <a href="#" class="header__btn">
+          <a href="#" class="btn-call">
             Заказать звонок
           </a>
         </div>
       </div>
     </div>
   </header>
+
+  <div class="burger-menu">
+    <div class="burger__block">
+      <div class="container burger__block-container">
+        <div class="shedule">
+          <a href="#" class="shedule__link">+7 <span class="text_style_opacity">(</span>499<span class="text_style_opacity">)</span> 990-85-77</a>
+          <span class="shedule__text">На связи с 9:00 до 20:00</span>
+        </div>
+        
+        <a href="#" class="btn-call">
+          Заказать звонок
+        </a>
+      </div>
+    </div>
+
+    <div class="burger__block">
+      <div class="container">
+        <ul class="burger__nav">
+          <li class="burger__nav-item burger__nav-item_current burger__nav-item_size_half">
+            <a href="#" class="burger__nav-link">Главная</a>
+          </li>
+          <li class="burger__nav-item burger__nav-item_size_half">
+            <a href="#" class="burger__nav-link">Отзывы</a>
+          </li>
+          <li class="burger__nav-item">
+            <a href="#" class="burger__nav-link">Примеры работ</a>
+          </li>
+          <li class="burger__nav-item">
+            <a href="#" class="burger__nav-link">Порядок работ</a>
+          </li>
+          <li class="burger__nav-item">
+            <a href="#" class="burger__nav-link">Контакты</a>
+          </li>
+          <li class="burger__nav-item">
+            <a href="#" class="burger__nav-link">Все услуги</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="burger__block">
+      <div class="container">
+        <ul class="socials__list">
+          <li class="socials__list-item">
+            <a href="#" class="socials__list-link">
+              <svg width="18" height="18">
+                <use href="#mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__list-item">
+            <a href="#" class="socials__list-link">
+              <svg width="18" height="18">
+                <use href="#phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__list-item">
+            <a href="#" class="socials__list-link">
+              <svg width="18" height="18">
+                <use href="#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__list-item">
+            <a href="#" class="socials__list-link">
+              <svg width="18" height="18">
+                <use href="#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div class="hero__slider-wrapper">
     <div class="hero__slider">
@@ -278,7 +351,7 @@
     <div class="container hero__slider-buttons slider__button-container"></div>
   </div>
 
-  <main class="main">
+  <main class="main visually-hidden">
     <section class="section benefits">
       <div class="container">
         <div class="benefits__slider">
@@ -557,7 +630,7 @@
     </section>
 
     <section class="section reviews">
-      <div class="container">
+      <div class="container reviews__container">
         <h2 class="section__title reviews__title">Посмотрите видеоотзывы <span class="text_gold">от настоящих людей</span>,
           которым мы уже сделали ремонт</h2>
 
@@ -565,17 +638,17 @@
             <div class="reviews__slide">
               <div class="reviews__feedback">
                 <div class="reviews__data">
-                  <p class="reviewer__data-name">Лариса Валерьевна</p>
+                  <p class="reviews__data-name">Лариса Валерьевна</p>
                   <p class="reviews__data-date">15.11.2020</p>
                 </div>
 
-                <h3 class="reviews__title">Огромное спасибо за проделанную работу</h3>
+                <h3 class="reviews__feedback-title">Огромное спасибо за проделанную работу</h3>
 
-                <p class="reviews__text">Хочу поблагодарить фирму DecoroMania за то что они качественно, быстро выполнили ремонт по моему заказу. Никаких претензий нет. Все выполнено по хорошим расценкам, смета завольцована, превышение сметы не было. Рекомендую работу с этой фирмой.</p>
+                <p class="reviews__feedback-text reviews__feedback-text_half_text">Хочу поблагодарить фирму DecoroMania за то что они качественно, быстро выполнили ремонт по моему заказу. Никаких претензий нет. Все выполнено по хорошим расценкам, смета завольцована, превышение сметы не было. Рекомендую работу с этой фирмой.</p>
 
                 <button class="reviews__btn" type="button">Читать польностью</button>
 
-                <a href="#" class="reviews__link">
+                <a href="#" class="reviews__feedback-link">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="CurrentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                   </svg>
@@ -584,11 +657,71 @@
               </div>
               <div class="reviews__video">
                 <div class="reviews__video-wrapper">
-                  <!-- <img class="reviews__video-preview" src="./assets/img/reviews/poster1.png" width="620" height="350"> -->
-                  <iframe width="620" height="350" src="https://www.youtube.com/embed/RXcT1g6qpW4?si=9WgEXwbS7h7yIhdt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen poster="./assets/img/reviews/poster1.png"></iframe>
+                  <img class="reviews__video-preview__img" src="./assets/img/reviews/poster1.png" width="620" height="350">
+                  <iframe class="reviews__video-preview__frame" width="620" height="350" data-src="https://www.youtube.com/embed/RXcT1g6qpW4?si=9WgEXwbS7h7yIhdt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen poster="./assets/img/reviews/poster1.png"></iframe>
                 </div>
               </div>
             </div>
+
+            <div class="reviews__slide">
+              <div class="reviews__feedback">
+                <div class="reviews__data">
+                  <p class="reviews__data-name">Лариса Валерьевна</p>
+                  <p class="reviews__data-date">15.11.2020</p>
+                </div>
+
+                <h3 class="reviews__feedback-title">Огромное спасибо за проделанную работу</h3>
+
+                <p class="reviews__feedback-text reviews__feedback-text_half_text">Хочу поблагодарить фирму DecoroMania за то что они качественно, быстро выполнили ремонт по моему заказу. Никаких претензий нет. Все выполнено по хорошим расценкам, смета завольцована, превышение сметы не было. Рекомендую работу с этой фирмой.</p>
+
+                <button class="reviews__btn" type="button">Читать польностью</button>
+
+                <a href="#" class="reviews__feedback-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="CurrentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                  instagram.com/irisvia63
+                </a>
+              </div>
+              <div class="reviews__video">
+                <div class="reviews__video-wrapper">
+                  <img class="reviews__video-preview__img" src="./assets/img/reviews/poster1.png" width="620" height="350">
+                  <iframe class="reviews__video-preview__frame" width="620" height="350" data-src="https://www.youtube.com/embed/RXcT1g6qpW4?si=9WgEXwbS7h7yIhdt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen poster="./assets/img/reviews/poster1.png"></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews__slide">
+              <div class="reviews__feedback">
+                <div class="reviews__data">
+                  <p class="reviews__data-name">Лариса Валерьевна</p>
+                  <p class="reviews__data-date">15.11.2020</p>
+                </div>
+
+                <h3 class="reviews__feedback-title">Огромное спасибо за проделанную работу</h3>
+
+                <p class="reviews__feedback-text reviews__feedback-text_half_text">Хочу поблагодарить фирму DecoroMania за то что они качественно, быстро выполнили ремонт по моему заказу. Никаких претензий нет. Все выполнено по хорошим расценкам, смета завольцована, превышение сметы не было. Рекомендую работу с этой фирмой.</p>
+
+                <button class="reviews__btn" type="button">Читать польностью</button>
+
+                <a href="#" class="reviews__feedback-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="CurrentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                  instagram.com/irisvia63
+                </a>
+              </div>
+              <div class="reviews__video">
+                <div class="reviews__video-wrapper">
+                  <img class="reviews__video-preview__img" src="./assets/img/reviews/poster1.png" width="620" height="350">
+                  <iframe class="reviews__video-preview__frame" width="620" height="350" data-src="https://www.youtube.com/embed/RXcT1g6qpW4?si=9WgEXwbS7h7yIhdt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen poster="./assets/img/reviews/poster1.png"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews__dots">
+
           </div>
       </div>
     </section>
@@ -687,6 +820,74 @@
     </section>
   </main>
 
+  <footer class="footer visually-hidden">
+    <div class="container">
+      <div class="footer__top">
+        <div class="logo footer__logo">
+          <a href="/" class="logo__link">
+            <span class="logo__text">Декоративный <br/>
+              ремонт помещений</span>
+            <img class="logo__img" src="./assets/img/logo.png" width="145" height="25" alt="Декоративный ремонт помещений">
+          </a>
+        </div>
+
+        <div class="shedule footer__shedule">
+          <a href="#" class="shedule__link">+7 <span class="text_style_opacity">(</span>499<span class="text_style_opacity">)</span> 990-85-77</a>
+          <span class="shedule__text">На связи с 9:00 до 20:00</span>
+        </div>
+
+        <a href="#" class="btn-call">
+          Заказать звонок
+        </a>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="address">
+          <svg class="address__icon" width="18" height="18">
+            <use href="#address-icon"></use>
+          </svg>
+  
+          <span class="address__text">Работаем в Москве и МО</span>
+        </div>
+
+        <div class="footer__block">
+          <a href="#" class="footer__policy">Политика конфиденциальности</a>
+
+          <ul class="socials__list">
+            <li class="socials__list-item">
+              <a href="#" class="socials__list-link">
+                <svg width="18" height="18">
+                  <use href="#mail"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a href="#" class="socials__list-link">
+                <svg width="18" height="18">
+                  <use href="#phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a href="#" class="socials__list-link">
+                <svg width="18" height="18">
+                  <use href="#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a href="#" class="socials__list-link">
+                <svg width="18" height="18">
+                  <use href="#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
   <svg class="visually-hidden" width="0" height="0" hidden>
     <symbol  width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" id="address-icon">
@@ -722,17 +923,18 @@
     </symbol>
 
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 16" id="slider-arrow-next">
-      <path d="M8.70711 7.29289C9.09763 7.68342 9.09763 8.31658 8.70711 8.70711L2.34315 15.0711C1.95262 15.4616 1.31946 15.4616 0.928932 15.0711C0.538408 14.6805 0.538408 14.0474 0.928932 13.6569L6.58579 8L0.928932 2.34315C0.538408 1.95262 0.538408 1.31946 0.928932 0.928932C1.31946 0.538408 1.95262 0.538408 2.34315 0.928932L8.70711 7.29289ZM7 7H8V9H7V7Z" fill="white"></path>
+      <path d="M8.70711 7.29289C9.09763 7.68342 9.09763 8.31658 8.70711 8.70711L2.34315 15.0711C1.95262 15.4616 1.31946 15.4616 0.928932 15.0711C0.538408 14.6805 0.538408 14.0474 0.928932 13.6569L6.58579 8L0.928932 2.34315C0.538408 1.95262 0.538408 1.31946 0.928932 0.928932C1.31946 0.538408 1.95262 0.538408 2.34315 0.928932L8.70711 7.29289ZM7 7H8V9H7V7Z" fill="CurrentColor"></path>
     </symbol>
 
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 16" id="slider-arrow-prev">
-      <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM2 7H1V9H2V7Z" fill="white"></path>
+      <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM2 7H1V9H2V7Z" fill="CurrentColor"></path>
     </symbol>
   </svg>
 
   <script src="./assets/libs/jquery/jquery-3.7.1.min.js"></script>
   <script src="./assets/libs/jquery/jquery-migrate-3.4.1.min.js"></script>
   <script src="./assets/libs/slick/slick.js"></script>
+  <script src="./assets/libs/magnific/jquery.magnific-popup.min.js"></script>
   <script src="./assets/js/index.js" type="module"></script>
 
 </body>

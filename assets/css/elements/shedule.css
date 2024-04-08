@@ -1,0 +1,26 @@
+.shedule {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.8;
+}
+
+.shedule__link {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.shedule__text {
+  font-size: 14px;
+  opacity: 0.45;
+}
+
+@media (max-width: 1150px) {
+  .shedule__link {
+    font-size: 18px;
+  }
+
+  .shedule__text {
+    font-size: 13px;
+  }
+}

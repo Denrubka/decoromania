@@ -1,0 +1,28 @@
+.address {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.address__icon {
+  margin-right: 10px;
+  opacity: 0.1;
+}
+
+@media (max-width: 1150px) {
+  .address {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1024px) { 
+  .address {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 930px) {
+  .address {
+    display: none;
+  }
+}

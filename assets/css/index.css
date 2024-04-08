@@ -2,6 +2,10 @@
 @import url(normalize.css);
 @import url(style.css);
 
+@import url(../libs/slick/slick.css);
+@import url(../libs/slick/slick-theme.css);
+@import url(../libs/magnific/magnific-popup.css);
+
 @import url(blocks/header.css);
 @import url(blocks/hero.css);
 @import url(blocks/benefits.css);
@@ -10,9 +14,12 @@
 @import url(blocks/steps.css);
 @import url(blocks/reviews.css);
 @import url(blocks/team.css);
+@import url(blocks/footer.css);
 
 @import url(elements/logo.css);
+@import url(elements/address.css);
 @import url(elements/socials.css);
+@import url(elements/shedule.css);
 @import url(elements/btn.css);
 @import url(elements/slider__button.css);
 @import url(elements/burger.css);
