@@ -1,9 +1,12 @@
 .hero__slider-wrapper {
   position: relative;
+  height: 600px;
+  overflow: hidden;
+  margin-top: -152px;
 }
 
 .hero__slider {
-  margin-top: -152px;
+  /* margin-top: -152px; */
   font-family: var(--second-family), serif;
   color: #fff;
 }
@@ -51,7 +54,9 @@
 }
 
 .hero__slide {
-  height: 600px;
+  max-height: 600px;
+  min-height: 600px;
+  overflow: hidden;
   padding-top: 190px;
   background-position: center left 50%;
   background-size: cover;

@@ -1,5 +1,6 @@
 .services__slider-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .services__slider .slick-slide {
