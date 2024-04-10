@@ -1,14 +1,5 @@
-.section__subtitle {
-  width: fit-content;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 16px;
-  color: #5e5e5e;
-  margin-bottom: 70px;
-}
-
 .steps__img {
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 .steps__list {
@@ -23,7 +14,7 @@
   position: relative;
   background: url("../../img/steps/steps-item-bg.jpg") no-repeat center / cover;
   max-width: 360px;
-  padding: 25px 25px 40px 25px;
+  padding: 25px 25px 45px 25px;
 }
 
 .steps__item_margin_top {
@@ -44,6 +35,7 @@
 }
 
 .steps__item-title {
+  font-family: var(--second-family), serif;
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 40px;
@@ -71,6 +63,7 @@
 
 .steps__item-text {
   font-size: 15px;
+  font-weight: 500;
 }
 
 .steps__item-text:not(:last-of-type) {
@@ -78,9 +71,11 @@
 }
 
 .steps__item-number {
+  font-family: var(--second-family), serif;
   font-size: 25px;
+  color: #FFFFFF;
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }

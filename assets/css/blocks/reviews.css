@@ -159,7 +159,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Old Standard TT';
+  font-family: var(--second-family);
   font-size: 36px;
   line-height: 1;
   color: #FFFFFF;

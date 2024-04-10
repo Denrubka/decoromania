@@ -8,7 +8,7 @@ export const worksSlider = () => {
       // fade: true,
       // speed: 2000,
       dots: true,
-      centerPadding: '15px',
+      centerPadding: '0px',
       centerMode: true,
       slidesToShow: 3,
       slidesToScroll: 1,

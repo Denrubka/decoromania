@@ -10,9 +10,8 @@
   background-image: url('../../img/btn/btn-bg.png');
   background-repeat: repeat-x;
   background-position: top left;
-  box-shadow: 0 3px 25px 5px rgba(189,142,90,.3);
   border-radius: 25px;
-  font-family: var(--font-family);
+  font-family: var(--second-family), serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1;
@@ -26,7 +25,16 @@
 
 .btn:hover {
   background-image: url('../../img/btn/btn-bg-hover.png');
-  box-shadow: 0 3px 25px 5px rgba(21,32,57,.7);
+  box-shadow: 0 3px 25px 5px rgba(189,142,90,.35);
+}
+
+.btn:active {
+  background-image: url('../../img/btn/btn-bg-active.png');
+  box-shadow: none;
+}
+
+.btn_main {
+  text-transform: uppercase;
 }
 
 .btn-call {

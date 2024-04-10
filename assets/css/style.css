@@ -20,7 +20,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: var(--font-family), sans-serif;
-  line-height: 1.125;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -93,17 +93,28 @@ iframe {
 }
 
 .section {
-  padding: 50px 0;
-  overflow: hidden;
+  padding: 100px 0;
+}
+
+.section__head {
+  margin-bottom: 60px;
 }
 
 .section__title {
-  font-family: 'Old Standard TT';
+  font-family: var(--second-family), serif;
   font-size: 50px;
   color: #000;
-  margin-bottom: 60px;
   text-align: center;
   font-weight: 400;
+}
+
+.section__subtitle {
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #5e5e5e;
+  margin-top: 20px;
 }
 
 .text_gold {

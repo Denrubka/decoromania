@@ -17,6 +17,7 @@
 .accordion__item::before {
   position: absolute;
   content: '0'counter(item);
+  font-family: var(--second-family), serif;
   top: -7px;
   left: 0;
   font-size: 50px;

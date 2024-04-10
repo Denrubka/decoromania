@@ -1,5 +1,9 @@
 .services__slider-wrapper {
   position: relative;
+  margin-bottom: 150px;
+}
+
+.services__slider {
   overflow: hidden;
 }
 
