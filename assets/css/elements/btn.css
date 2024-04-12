@@ -5,7 +5,7 @@
 
 .btn {
   display: inline-block;
-  padding: 15px 40px;
+  padding: 18px 40px 13px 40px;
   background-color: #deb46a;
   background-image: url('../../img/btn/btn-bg.png');
   background-repeat: repeat-x;
