@@ -3,6 +3,10 @@
   margin-bottom: 150px;
 }
 
+.services__tabs {
+  justify-content: center;
+}
+
 .services__slider {
   overflow: hidden;
 }
