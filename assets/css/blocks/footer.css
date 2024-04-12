@@ -15,6 +15,14 @@
   margin-right: auto;
 }
 
+.footer__logo .logo__link {
+  align-items: flex-start;
+}
+
+.footer__logo .logo__text {
+  text-align: left;
+}
+
 .footer__shedule {
   margin-right: 40px;
 }
@@ -36,6 +44,11 @@
   justify-content: flex-end;
 }
 
+.footer__policy {
+  opacity: 0.45;
+}
+
 .footer__team {
   text-align: center;
+  opacity: 0.45;
 }
