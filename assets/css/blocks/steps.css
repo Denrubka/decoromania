@@ -15,6 +15,7 @@
   background: url("../../img/steps/steps-item-bg.jpg") no-repeat center / cover;
   max-width: 360px;
   padding: 25px 25px 45px 25px;
+  border-radius: 10px;
 }
 
 .steps__item_margin_top {
