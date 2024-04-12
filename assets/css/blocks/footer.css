@@ -19,17 +19,23 @@
   margin-right: 40px;
 }
 
-.footer__bottom {
+.footer__middle {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
-.footer__block {
-  display: flex;
-  flex-direction: column;
+.footer__middle .address, .footer__middle .socials__list {
+  max-width: 200px;
+  width: 100%;
 }
 
-.footer__policy {
-  margin-bottom: 10px;
+.footer__middle .socials__list {
+  justify-content: flex-end;
+}
+
+.footer__team {
+  text-align: center;
 }

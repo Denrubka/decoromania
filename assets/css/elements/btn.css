@@ -62,6 +62,43 @@
   margin-right: 10px;
 }
 
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all .2s linear;
+  box-shadow: inset 0 0 0 3px#cccccc;
+  border-radius: 50%;
+}
+
+.btn-top_show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.btn-top__circle {
+  width: 46px;
+  height: 46px;
+  fill: transparent;
+  stroke: #dbb974;
+  stroke-width: 6px;
+}
+
+.btn-top__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  color: #dbb974;
+  width: 15px;
+  height: 20px;
+}
+
 @media (max-width: 1150px) {
   .btn-call {
     padding: 20px 30px;

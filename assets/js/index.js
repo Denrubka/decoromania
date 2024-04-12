@@ -6,6 +6,7 @@ import headerSticky from "./stickyHeader.js";
 import { accordion } from "./accordion.js";
 import reviewsVideo from "./reviewsVideo.js";
 import burger from "./burger.js";
+import btnToTop from "./btnToTop.js";
 
 heroSlider();
 headerSticky();
@@ -15,3 +16,5 @@ accordion();
 reviewsVideo();
 reviewsSlider();
 burger();
+btnToTop();
+
