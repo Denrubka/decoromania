@@ -112,3 +112,17 @@
     color: #FFFFFF;
   }
 }
+
+@media (max-width: 500px ) {
+  .btn-call {
+    font-size: 12px;
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn {
+    font-size: 14px;
+    padding: 18px 23px 13px 23px;
+  }
+}
