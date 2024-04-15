@@ -105,14 +105,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .btn-call {
-    box-shadow: inset 0 4px 15px 0 rgba(255, 255, 255, 0.25);
-    background: #3f6096;
-    color: #FFFFFF;
-  }
-}
-
 @media (max-width: 500px ) {
   .btn-call {
     font-size: 12px;

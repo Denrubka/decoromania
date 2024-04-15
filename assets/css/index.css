@@ -6,16 +6,6 @@
 @import url(../libs/slick/slick-theme.css);
 @import url(../libs/magnific/magnific-popup.css);
 
-@import url(blocks/header.css);
-@import url(blocks/hero.css);
-@import url(blocks/benefits.css);
-@import url(blocks/services.css);
-@import url(blocks/works.css);
-@import url(blocks/steps.css);
-@import url(blocks/reviews.css);
-@import url(blocks/team.css);
-@import url(blocks/footer.css);
-
 @import url(elements/logo.css);
 @import url(elements/address.css);
 @import url(elements/socials.css);
@@ -25,3 +15,13 @@
 @import url(elements/burger.css);
 @import url(elements/accordion.css);
 @import url(elements/tabs.css);
+
+@import url(blocks/header.css);
+@import url(blocks/hero.css);
+@import url(blocks/benefits.css);
+@import url(blocks/services.css);
+@import url(blocks/works.css);
+@import url(blocks/steps.css);
+@import url(blocks/reviews.css);
+@import url(blocks/team.css);
+@import url(blocks/footer.css);

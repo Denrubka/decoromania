@@ -157,7 +157,29 @@
     display: none;
   }
 
+  .header__logo_mobile {
+    display: flex;
+    padding: 0;
+  }
+
+  .header__logo_mobile .logo__link {
+    text-align: left;
+    align-items: flex-start;
+  }
+
   .header .socials__list, .header__sticky .socials__list {
     display: none;
+  }
+
+  .header__btn-call {
+    box-shadow: inset 0 4px 15px 0 rgba(255, 255, 255, 0.25);
+    background: #3f6096;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__sticky-wrapper {
+    padding: 10px 16px;
   }
 }

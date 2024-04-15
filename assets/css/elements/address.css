@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 930px) {
-  .address {
+  .header .address, .header__sticky .address {
     display: none;
   }
 }

@@ -24,6 +24,21 @@ export const worksSlider = () => {
       slidesToScroll: 1,
       prevArrow: `${sliderButtonPrev}`,
       nextArrow: `${sliderButtonNext}`,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            centerMode: false,
+          }
+        }, 
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }, 
+      ]
     });
   });
 }

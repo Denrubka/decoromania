@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: left;
 }
 
 .accordion__item-button[aria-expanded=true] + .accordion__content {
@@ -41,7 +42,8 @@
 
 .accordion__item-icon {
   position: relative;
-  display: block;
+  display: flex;
+  flex-shrink: 0;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -90,4 +92,39 @@
 .accordion__text {
   font-size: 16px;
   color: #5e5e5e;
+}
+
+@media (max-width: 540px) {
+  .accordion__item {
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+
+  .accordion__item:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  .accordion__item::before {
+    font-size: 35px;
+    top: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .accordion__item {
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+
+  .accordion__item::before {
+    font-size: 26px;
+  }
+
+  .accordion__item-title {
+    font-size: 16px;
+  }
+
+  .accordion__text {
+    font-size: 14px;
+  }
 }

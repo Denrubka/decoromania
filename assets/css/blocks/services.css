@@ -71,3 +71,39 @@
 .hide-bottom {
   transform: translateY(150%);
 }
+
+@media (max-width: 1400px) {
+  .services__slider {
+    padding: 0 75px;
+  }
+
+  .services__slider-wrapper .slider__button_prev {
+    left: 0;
+  }
+
+  .services__slider-wrapper .slider__button_next {
+    right: 0;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .services__card {
+    height: 220px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services__card {
+    height: 200px;
+  }
+
+  .services__card-title {
+    font-size: 17px;
+  }
+
+  .services__card-btn {
+    font-size: 15px;
+    padding: 5px 15px;
+  }
+}

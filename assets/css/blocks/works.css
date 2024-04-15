@@ -137,3 +137,41 @@
 .works .slick-dots li.slick-active button {
   background: linear-gradient(#f0dbb4, #caa561);
 }
+
+@media (max-width: 1400px) {
+  .works__slider {
+    padding: 0 75px;
+  }
+
+  .works__slider-wrapper .slider__button_prev {
+    left: 0;
+  }
+
+  .works__slider-wrapper .slider__button_next {
+    right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .works .slick-track {
+    padding-top: 190px;
+  }
+
+  .works__slide-title {
+    margin-bottom: 10px;
+  }
+
+  .works__slide-text {
+    font-size: 14px;
+  }
+
+  .works__slide-img {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .works .slick-slide .works__slide-img {
+    transform: translateY(-85%);
+}
+}
