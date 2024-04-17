@@ -155,7 +155,7 @@
 }
 
 @media (max-width: 570px) {
-  .slider__button-container {
+  .hero__slider-buttons {
     display: none !important;
   }
 

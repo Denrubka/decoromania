@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.services__slider_mobile {
+  display: none;
+}
+
 .services__slider .slick-slide {
   opacity: 1 !important;
 }
@@ -38,6 +42,7 @@
 }
 
 .services__card-title {
+  font-family: var(--second-family), serif;
   color: #FFFFFF;
   font-size: 20px;
   margin-bottom: 10px;
@@ -48,7 +53,7 @@
   color: #FFFFFF;
   border: 2px solid #DBB974;
   padding: 5px 20px;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 .services .slider__button {
@@ -105,5 +110,72 @@
   .services__card-btn {
     font-size: 15px;
     padding: 5px 15px;
+  }
+}
+
+@media (max-width: 870px) {
+  .services__card_big {
+    width: calc(33% - 5px);
+  }
+
+  .services__card_small {
+    width: calc(33% - 5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .services__cards {
+    gap: 5px;
+  }
+
+  .services__card {
+    height: 170px;
+  }
+
+  .services__card_big {
+    width: calc(33% - 2px);
+  }
+
+  .services__card_small {
+    width: calc(33% - 2px);
+  }
+
+  .services__card-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .services__slider {
+    padding: 0 60px;
+  }
+
+  .services__slider_pc {
+    display: none;
+  }
+
+  .services__slider_mobile {
+    display: block;
+  }
+
+  .services__card {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .services__slider {
+    padding: 0;
+  }
+
+  .services__slider-buttons {
+    max-width: 230px;
+    bottom: -70px;
+    top: initial;
+  }
+
+  .services__slider-buttons .slider__button {
+    position: static;
+    transform: translateY(0);
   }
 }
