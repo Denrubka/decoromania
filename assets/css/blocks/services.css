@@ -98,6 +98,12 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .services__slider-wrapper {
+    margin-bottom: 100px;
+  }
+}
+
 @media (max-width: 1024px) {
   .services__card {
     height: 200px;
@@ -163,7 +169,17 @@
   }
 }
 
+@media (max-width: 500px) {
+  .services__slider-wrapper {
+    margin-bottom: 70px;
+  }
+}
+
 @media (max-width: 400px) {
+  .services__slider-wrapper {
+    margin-bottom: 140px;
+  }
+
   .services__slider {
     padding: 0;
   }

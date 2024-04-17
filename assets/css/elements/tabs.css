@@ -12,3 +12,21 @@
   border: 1px solid #DBB974;
   border-radius: 25px;
 }
+
+@media (max-width: 768px) {
+  .tab {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .tabs {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .tab {
+    font-size: 14px;
+  }
+}
