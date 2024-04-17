@@ -11,6 +11,11 @@
   padding: 12px 36px;
   border: 1px solid #DBB974;
   border-radius: 25px;
+  transition: all .2s linear;
+}
+
+.tab:hover {
+  background: #DBB974;
 }
 
 @media (max-width: 768px) {

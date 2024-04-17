@@ -46,11 +46,21 @@
 
 .footer__policy {
   opacity: 0.45;
+  transition: opacity .2s linear;
+}
+
+.footer__policy:hover {
+  opacity: 1;
 }
 
 .footer__team {
   text-align: center;
   opacity: 0.45;
+  transition: opacity .2s linear;
+}
+
+.footer__team:hover {
+  opacity: 1;
 }
 
 @media (max-width: 1150px) {
@@ -89,9 +99,14 @@
     margin-bottom: 20px;
   }
 
-  .footer__policy {
+  .footer__middle .socials__list {
     margin-bottom: 20px;
   }
+
+  .footer__policy {
+    order: 1;
+  }
+
 }
 
 @media (max-width: 610px) {

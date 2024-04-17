@@ -49,6 +49,11 @@
   font-size: 14px;
   line-height: 0.8;
   letter-spacing: -0.03em;
+  transition: background .2s linear;
+}
+
+.btn-call:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .btn-call::before {

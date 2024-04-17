@@ -8,6 +8,11 @@
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 10px;
+  transition: color .2s linear;
+}
+
+.shedule__link:hover {
+  color:#DBB974;
 }
 
 .shedule__text {

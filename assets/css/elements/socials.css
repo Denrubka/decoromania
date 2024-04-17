@@ -12,6 +12,14 @@
   margin-right: 30px;
 }
 
+.socials__list-link {
+  transition: color .2s linear;
+}
+
+.socials__list-link:hover {
+  color:#DBB974;
+}
+
 @media (max-width: 1150px) {
   .socials__list-item:not(:last-of-type) {
     margin-right: 20px;

@@ -45,6 +45,7 @@
 }
 
 .reviews__feedback-title {
+  font-family: var(--second-family), serif;
   font-size: 28px;
   color: #d1b877;
   line-height: 1;
@@ -69,6 +70,12 @@
   line-height: 1.05;
   border-bottom: 1px solid #fff;
   color: #ffffff;
+  transition: all .2s linear;
+}
+
+.reviews__btn:hover {
+  color: #DBB974;
+  border-color: #DBB974;
 }
 
 .reviews__btn_hide {
@@ -80,6 +87,11 @@
   align-items: center;
   width: fit-content;
   margin-top: 50px;
+  transition: color .2s linear;
+}
+
+.reviews__feedback-link:hover {
+  color: #DBB974;
 }
 
 .reviews__feedback-link svg {
@@ -124,6 +136,11 @@
   border-color: #DBB974;
   top: initial;
   transform: translateY(0);
+}
+
+.reviews .slider__button:hover {
+  background: #DBB974;
+  color: #FFFFFF;
 }
 
 .reviews .slider__button_prev {

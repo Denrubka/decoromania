@@ -101,6 +101,11 @@
   color: #DBB974;
 }
 
+.works .slider__button:hover {
+  background: #DBB974;
+  color: #FFFFFF;
+}
+
 .works .slick-dots {
   padding: 0;
   background-color: #fff;

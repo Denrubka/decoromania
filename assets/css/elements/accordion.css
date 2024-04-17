@@ -48,12 +48,22 @@
   height: 26px;
   border-radius: 50%;
   border: 1px solid #DBB974;
+  transition: background .2s linear;
+}
+
+.accordion__item-icon:hover {
+  background: #DBB974;
 }
 
 .accordion__item-icon:before, .accordion__item-icon:after {
   position: absolute;
   content: '';
   background: #DBB974;
+  transition: background .2s linear;
+}
+
+.accordion__item-icon:hover:before, .accordion__item-icon:hover:after {
+  background: #FFFFFF;
 }
 
 .accordion__item-icon:before {

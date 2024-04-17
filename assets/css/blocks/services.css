@@ -54,11 +54,23 @@
   border: 2px solid #DBB974;
   padding: 5px 20px;
   border-radius: 25px;
+  transition: all .2s linear;
+}
+
+.services__card-btn:hover {
+  background: #DBB974;
+  color: #33363c;
 }
 
 .services .slider__button {
   border-color: #DBB974;
   color: #DBB974;
+  /* transition: all .2s linear; */
+}
+
+.services .slider__button:hover {
+  background: #DBB974;
+  color: #FFFFFF;
 }
 
 .hide-left {
@@ -130,6 +142,8 @@
 }
 
 @media (max-width: 768px) {
+
+
   .services__cards {
     gap: 5px;
   }

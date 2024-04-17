@@ -176,6 +176,10 @@
     background: #3f6096;
     color: #FFFFFF;
   }
+
+  .header__btn-call:hover {
+    background: #294d87;
+  }
 }
 
 @media (max-width: 500px) {

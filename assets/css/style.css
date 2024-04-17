@@ -31,6 +31,42 @@ body {
   background-color: #fff;
 }
 
+body::-webkit-scrollbar {
+  width: 18px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #EADEED;
+}
+
+body::-webkit-scrollbar-button {
+	background-image: url('');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 0px
+}
+
+body::-webkit-resizer {
+	background-image: url('');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 0px
+}
+
+body::-webkit-scrollbar {
+	width: 18px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #DBB974;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ebb852;
+}
+
 img,
 svg {
   display: block;
