@@ -26,6 +26,7 @@
 }
 
 .services__card {
+  position: relative;
   background: red;
   border-radius: 10px;
   height: 250px;
@@ -41,7 +42,7 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-  background: rgba(0,0,0, .5);
+  background: rgba(0,0,0, .19);
   border-radius: 10px;
 }
 
