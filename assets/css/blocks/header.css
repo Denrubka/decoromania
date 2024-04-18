@@ -187,3 +187,13 @@
     padding: 10px 16px;
   }
 }
+
+@media (max-width: 350px) {
+  .header .btn-call, .burger-menu .btn-call {
+    padding: 16px 10px;
+  }
+
+  .header .btn-call::before, .burger-menu .btn-call::before {
+    margin-right: 5px;
+  }
+}
